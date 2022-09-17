@@ -1,0 +1,53 @@
+swagger: "2.0"
+info:
+  title: deets-dt-datasource-interface
+  version: 1.0.0
+
+basePath: /api/v1
+
+paths:
+  /products:
+    get:
+      summary: Get all products
+      description: Get all products
+      tags:
+        - Products
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: string
+                rfid:
+                  type: string
+                name:
+                  type: string
+                price:
+                  type: number
+                images:
+                  type: array
+                  items:
+                    type: string
+                related_products:
+                  type: array
+                  items:
+                    type: string
+              required:
+                - id
+                - rfid
+                - name
+                - price
+
+        500:
+          description: Internal Server Error
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+              message:
+                type: string
