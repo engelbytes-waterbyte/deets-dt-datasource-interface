@@ -3,8 +3,6 @@ info:
   title: deets-dt-datasource-interface
   version: 1.0.0
 
-basePath: /api/v1
-
 paths:
   /products:
     get:
