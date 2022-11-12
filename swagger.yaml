@@ -19,7 +19,7 @@ paths:
               type: object
               properties:
                 id:
-                  type: string
+                  type: integer
                 rfid:
                   type: string
                 name:
