@@ -27,18 +27,20 @@ paths:
                 price:
                   type: number
                 images:
-                  type: array
-                  items:
-                    type: string
+                  type: string
+                additional_properties:
+                  type: string
                 related_products:
                   type: array
                   items:
-                    type: string
+                    type: integer
               required:
                 - id
+                - rfid
                 - name
                 - price
-
+                - images
+                - additional_properties
         500:
           description: Internal Server Error
           schema:
