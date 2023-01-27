@@ -6,6 +6,10 @@ type AdditionalProperty struct {
 	Data interface{} `json:"data"`
 }
 
+func (p AdditionalProperty) GetID() string {
+	return p.Name + "-" + p.Type
+}
+
 const (
 	PropertyTypeText   = "text"
 	PropertyTypeNumber = "number"
