@@ -6,6 +6,12 @@ type AdditionalProperty struct {
 	Data interface{} `json:"data"`
 }
 
+const (
+	PropertyTypeText   = "text"
+	PropertyTypeNumber = "number"
+	PropertyTypeImage  = "image"
+)
+
 type TextPropertyData string
 
 type NumberPropertyData float64
