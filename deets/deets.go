@@ -20,7 +20,7 @@ type TextPropertyData string
 
 type NumberPropertyData float64
 
-type ImagePropertyData struct {
+type MediaPropertyData struct {
 	URL    string  `json:"url"`
 	Width  *int    `json:"width,omitempty"`
 	Height *int    `json:"height,omitempty"`

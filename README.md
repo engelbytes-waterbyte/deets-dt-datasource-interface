@@ -8,14 +8,14 @@ You can implement this swagger specification in any framework and programming la
 
 For the properties of a product, stick to the swagger documentation, special properties are:
 
-- images: This property is required. If your datasource does not provide product images, use a stringified empty array as values (e.g. `[]`). If your datasource does provide product images, use a stringified array of ImagePropertyData objects.
+- images: This property is required. If your datasource does not provide product images, use a stringified empty array as values (e.g. `[]`). If your datasource does provide product images, use a stringified array of MediaPropertyData objects.
 - additional_properties: The additional properties of the product, you may use any supported property type here, adhere to the AdditionalProperty Type.
 
 ## Types
 
-### ImagePropertyData
+### MediaPropertyData
 
-<!-- type ImagePropertyData struct {
+<!-- type MediaPropertyData struct {
 URL string `json:"url"`
 Width *int `json:"width,omitempty"`
 Height *int `json:"height,omitempty"`
